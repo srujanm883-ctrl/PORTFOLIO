@@ -1,0 +1,292 @@
+.thumb-category-page {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumb-category-header {
+  margin-bottom: 4rem;
+}
+
+.thumb-category-subtitle {
+  font-size: 1rem;
+  color: var(--accent-mint);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thumb-category-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--accent-mint);
+}
+
+/* Category Grid */
+.thumb-category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* Choice Card Base */
+.thumb-choice-card {
+  position: relative;
+  padding: 2.5rem;
+  border-radius: 16px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.thumb-choice-card:hover {
+  transform: scale(1.03) translateY(-4px);
+}
+
+/* Full Length Card - Mint theme */
+.thumb-choice-full {
+  background: linear-gradient(145deg, #0a2e1b 0%, #111111 50%, #0d1f15 100%);
+  border: 1px solid rgba(0, 255, 153, 0.25);
+}
+
+.thumb-choice-full:hover {
+  border-color: var(--accent-mint);
+  box-shadow: 0 0 60px rgba(0, 255, 153, 0.2), 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.thumb-choice-full .thumb-choice-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 153, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.thumb-choice-full:hover .thumb-choice-glow {
+  opacity: 1;
+}
+
+.thumb-choice-full .thumb-choice-icon-ring {
+  color: var(--accent-mint);
+  border-color: rgba(0, 255, 153, 0.3);
+}
+
+.thumb-choice-full:hover .thumb-choice-icon-ring {
+  border-color: var(--accent-mint);
+  box-shadow: 0 0 30px rgba(0, 255, 153, 0.3);
+}
+
+.thumb-choice-full .thumb-choice-arrow {
+  color: var(--accent-mint);
+  border-color: rgba(0, 255, 153, 0.3);
+}
+
+.thumb-choice-full:hover .thumb-choice-arrow {
+  background-color: var(--accent-mint);
+  color: #000;
+  border-color: var(--accent-mint);
+}
+
+/* Short Video Card - Purple theme */
+.thumb-choice-short {
+  background: linear-gradient(145deg, #1a0a33 0%, #111111 50%, #150d24 100%);
+  border: 1px solid rgba(102, 0, 255, 0.25);
+}
+
+.thumb-choice-short:hover {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 60px rgba(102, 0, 255, 0.2), 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.thumb-choice-short .thumb-choice-glow {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 70% 30%, rgba(102, 0, 255, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.thumb-choice-short:hover .thumb-choice-glow {
+  opacity: 1;
+}
+
+.thumb-choice-short .thumb-choice-icon-ring {
+  color: var(--accent-purple);
+  border-color: rgba(102, 0, 255, 0.3);
+}
+
+.thumb-choice-short:hover .thumb-choice-icon-ring {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 30px rgba(102, 0, 255, 0.3);
+}
+
+.thumb-choice-short .thumb-choice-arrow {
+  color: var(--accent-purple);
+  border-color: rgba(102, 0, 255, 0.3);
+}
+
+.thumb-choice-short:hover .thumb-choice-arrow {
+  background-color: var(--accent-purple);
+  color: #fff;
+  border-color: var(--accent-purple);
+}
+
+/* Card Header */
+.thumb-choice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.thumb-choice-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+/* Icon Area */
+.thumb-choice-icon-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  z-index: 2;
+}
+
+.thumb-choice-icon-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Info Section */
+.thumb-choice-info {
+  z-index: 2;
+}
+
+.thumb-choice-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.thumb-choice-desc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Arrow Button */
+.thumb-choice-arrow {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .thumb-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thumb-choice-card {
+    min-height: 320px;
+  }
+
+  .thumb-choice-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Background Poster for Cards */
+.thumb-bg-poster {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.25;
+  transition: opacity 0.4s ease;
+  overflow: hidden;
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.thumb-choice-card:hover .thumb-bg-poster {
+  opacity: 0.5;
+}
+
+.tc-collage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  padding: 4px;
+}
+
+.tc-collage-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Vertical collage for short video (portrait) thumbnails */
+.tc-collage-vertical {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+

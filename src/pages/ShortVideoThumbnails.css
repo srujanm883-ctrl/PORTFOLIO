@@ -1,0 +1,208 @@
+.svt-page {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.svt-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.svt-subtitle {
+  font-size: 0.85rem;
+  color: var(--accent-mint);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0.5rem;
+}
+
+/* Masonry Grid - CSS columns for organic layout like Screen 3 */
+.svt-masonry {
+  columns: 5;
+  column-gap: 1rem;
+}
+
+/* Individual Card */
+.svt-card {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid transparent;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.svt-card:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* Size variants for masonry variety */
+.svt-size-tall .svt-card-inner {
+  aspect-ratio: 9 / 16;
+}
+
+.svt-size-medium .svt-card-inner {
+  aspect-ratio: 9 / 16;
+}
+
+/* Card Inner */
+.svt-card-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.svt-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.svt-card:hover .svt-card-img {
+  transform: scale(1.08);
+}
+
+
+
+/* Duration Badge */
+.svt-duration-badge {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  z-index: 3;
+}
+
+.svt-duration-badge span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--accent-mint);
+  text-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
+}
+
+/* View Project Overlay */
+.svt-view-project {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.svt-view-project span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+/* ===== GLOW BORDER COLORS ===== */
+
+/* Purple Glow */
+.svt-glow-purple {
+  border-color: rgba(140, 0, 255, 0.5);
+  box-shadow: 0 0 15px rgba(140, 0, 255, 0.2), inset 0 0 15px rgba(140, 0, 255, 0.05);
+}
+.svt-glow-purple:hover {
+  border-color: rgba(140, 0, 255, 0.9);
+  box-shadow: 0 0 35px rgba(140, 0, 255, 0.4), inset 0 0 20px rgba(140, 0, 255, 0.1);
+}
+
+/* Yellow Glow */
+.svt-glow-yellow {
+  border-color: rgba(255, 230, 0, 0.5);
+  box-shadow: 0 0 15px rgba(255, 230, 0, 0.15), inset 0 0 15px rgba(255, 230, 0, 0.05);
+}
+.svt-glow-yellow:hover {
+  border-color: rgba(255, 230, 0, 0.9);
+  box-shadow: 0 0 35px rgba(255, 230, 0, 0.3), inset 0 0 20px rgba(255, 230, 0, 0.1);
+}
+
+/* Red Glow */
+.svt-glow-red {
+  border-color: rgba(255, 50, 50, 0.5);
+  box-shadow: 0 0 15px rgba(255, 50, 50, 0.15), inset 0 0 15px rgba(255, 50, 50, 0.05);
+}
+.svt-glow-red:hover {
+  border-color: rgba(255, 50, 50, 0.9);
+  box-shadow: 0 0 35px rgba(255, 50, 50, 0.35), inset 0 0 20px rgba(255, 50, 50, 0.1);
+}
+
+/* Green Glow */
+.svt-glow-green {
+  border-color: rgba(0, 255, 100, 0.5);
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.15), inset 0 0 15px rgba(0, 255, 100, 0.05);
+}
+.svt-glow-green:hover {
+  border-color: rgba(0, 255, 100, 0.9);
+  box-shadow: 0 0 35px rgba(0, 255, 100, 0.35), inset 0 0 20px rgba(0, 255, 100, 0.1);
+}
+
+/* Mint Glow */
+.svt-glow-mint {
+  border-color: rgba(0, 255, 153, 0.4);
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.15), inset 0 0 15px rgba(0, 255, 153, 0.05);
+}
+.svt-glow-mint:hover {
+  border-color: rgba(0, 255, 153, 0.9);
+  box-shadow: 0 0 35px rgba(0, 255, 153, 0.35), inset 0 0 20px rgba(0, 255, 153, 0.1);
+}
+
+/* Blue Glow */
+.svt-glow-blue {
+  border-color: rgba(0, 100, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 100, 255, 0.2), inset 0 0 15px rgba(0, 100, 255, 0.05);
+}
+.svt-glow-blue:hover {
+  border-color: rgba(0, 100, 255, 0.9);
+  box-shadow: 0 0 35px rgba(0, 100, 255, 0.4), inset 0 0 20px rgba(0, 100, 255, 0.1);
+}
+
+/* Orange Glow */
+.svt-glow-orange {
+  border-color: rgba(255, 140, 0, 0.5);
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.2), inset 0 0 15px rgba(255, 140, 0, 0.05);
+}
+.svt-glow-orange:hover {
+  border-color: rgba(255, 140, 0, 0.9);
+  box-shadow: 0 0 35px rgba(255, 140, 0, 0.4), inset 0 0 20px rgba(255, 140, 0, 0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .svt-masonry {
+    columns: 4;
+  }
+}
+
+@media (max-width: 1024px) {
+  .svt-masonry {
+    columns: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .svt-masonry {
+    columns: 2;
+  }
+
+  .svt-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .svt-masonry {
+    columns: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,118 @@
+.others-page {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.others-category {
+  margin-bottom: 4rem;
+}
+
+.category-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.heading-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.purple-line {
+  background-color: rgba(102, 0, 255, 0.3);
+}
+
+.others-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.logos-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.flyers-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Card Base */
+.others-card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.others-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  border-color: var(--accent-mint);
+}
+
+.others-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.others-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Logo cards — square */
+.logos-grid .others-card {
+  aspect-ratio: 1 / 1;
+}
+
+/* Visiting Cards — landscape */
+.card-landscape {
+  aspect-ratio: 16 / 10;
+}
+
+/* Flyer cards — portrait, dark bg with teal border */
+.card-flyer {
+  aspect-ratio: 3 / 4;
+  border-color: rgba(102, 0, 255, 0.3);
+  border-radius: 12px;
+}
+
+.card-flyer:hover {
+  border-color: var(--accent-purple);
+  box-shadow: 0 8px 30px var(--accent-purple-glow);
+}
+
+@media (max-width: 1024px) {
+  .logos-grid, .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flyers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-grid, .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .flyers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-grid, .cards-grid, .flyers-grid {
+    grid-template-columns: 1fr;
+  }
+}
