@@ -41,11 +41,7 @@ const ShortVideos = () => {
         ))}
       </div>
 
-      <div className="load-more-section">
-        <button className="btn btn-outline-mint load-more-btn">
-          LOAD MORE FRAGMENTS <ArrowDown size={16} />
-        </button>
-      </div>
+
     </div>
   );
 };
