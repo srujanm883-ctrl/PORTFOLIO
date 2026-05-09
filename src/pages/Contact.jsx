@@ -32,28 +32,20 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-container">
-          <div className="application-box" style={{ padding: '2.5rem', border: '1px solid var(--border-color)', borderRadius: '12px', backgroundColor: 'var(--bg-card)', position: 'relative', overflow: 'hidden' }}>
-            <div className="work-together-content" style={{ 
-              marginBottom: '2.5rem', 
-              padding: '2rem', 
-              border: '1px dashed var(--accent-mint)', 
-              borderRadius: '8px', 
-              backgroundColor: 'rgba(0, 210, 255, 0.05)',
-              boxShadow: 'inset 0 0 15px rgba(0, 210, 255, 0.05)'
-            }}>
-              <h2 className="info-title text-mint" style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '1rem', letterSpacing: '1px', textTransform: 'uppercase' }}>LET'S WORK TOGETHER</h2>
-              <p className="work-description" style={{ color: 'var(--text-secondary)', lineHeight: '1.7', fontSize: '1.05rem', margin: '0' }}>
+          <div className="application-box">
+            <div className="work-together-content">
+              <h2 className="work-together-title">LET'S WORK TOGETHER</h2>
+              <p className="work-description">
                 Let’s collaborate to push your brand’s boundaries and unlock its true potential. While I won't claim to revolutionize every channel overnight, I guarantee you will see a measurable shift in the quality and impact of your visual presence. I am ready to help you scale—let's work together to drive the change your business deserves.
               </p>
             </div>
 
-            <div className="form-actions" style={{ marginTop: '0rem' }}>
+            <div className="form-actions-center">
               <a 
                 href="https://forms.gle/73XDZzGbuxVHptvF7" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn btn-primary submit-btn"
-                style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
+                className="btn btn-primary submit-btn-large"
               >
                 APPLICATION FORM <ArrowRight size={16} />
               </a>

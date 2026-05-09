@@ -75,6 +75,10 @@
   padding: 0.5rem;
 }
 
+
+
+
+
 @media (max-width: 768px) {
   .mobile-toggle {
     display: flex;
@@ -103,5 +107,9 @@
 
   .nav-link {
     font-size: 1rem;
+  }
+
+  .navbar-logo-img {
+    height: 45px;
   }
 }

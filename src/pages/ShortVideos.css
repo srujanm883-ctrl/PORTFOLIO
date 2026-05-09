@@ -172,7 +172,14 @@
 @media (max-width: 480px) {
   .videos-grid {
     grid-template-columns: 1fr;
-    max-width: 300px;
+    max-width: 100%;
     margin: 0 auto;
+  }
+  .video-play-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .section-title {
+    font-size: 2.2rem;
   }
 }
