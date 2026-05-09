@@ -38,17 +38,17 @@ const Portfolio = () => {
             <Layers size={24} className="text-mint" />
           </div>
           <div className="card-bg-poster">
-            <div className="thumbnail-collage-grid">
-              <img src="/images/poster-1.jpg" alt="" />
-              <img src="/images/poster-2.jpg" alt="" />
-              <img src="/images/poster-3.jpg" alt="" />
-              <img src="/images/poster-4.jpg" alt="" />
-              <img src="/images/poster-1.jpg" alt="" />
-              <img src="/images/poster-2.jpg" alt="" />
-              <img src="/images/poster-3.jpg" alt="" />
-              <img src="/images/poster-4.jpg" alt="" />
-              <img src="/images/poster-1.jpg" alt="" />
-            </div>
+              <div className="thumbnail-collage-grid">
+                <img src="/images/poster-1.jpg" alt="" />
+                <img src="/images/headphones.jpg" alt="" />
+                <img src="/images/poster-3.jpg" alt="" />
+                <img src="/images/poster-4.jpg" alt="" />
+                <img src="/images/poster-5.jpg" alt="" />
+                <img src="/images/poster-6.jpg" alt="" />
+                <img src="/images/poster-7.jpg" alt="" />
+                <img src="/images/poster-8.jpg" alt="" />
+                <img src="/images/poster-1.jpg" alt="" />
+              </div>
           </div>
           <h2 className="category-title">POSTERS</h2>
         </Link>
@@ -60,18 +60,18 @@ const Portfolio = () => {
           </div>
           <div className="card-bg-poster">
             <div className="thumbnail-collage-grid">
-              <img src="/images/svt-1.jpg" alt="" />
-              <img src="/images/svt-2.jpg" alt="" />
-              <img src="/images/svt-3.jpg" alt="" />
-              <img src="/images/svt-4.jpg" alt="" />
-              <img src="/images/svt-5.jpg" alt="" />
-              <img src="/images/svt-6.jpg" alt="" />
-              <img src="/images/svt-7.jpg" alt="" />
-              <img src="/images/svt-8.jpg" alt="" />
-              <img src="/images/svt-9.jpg" alt="" />
+              <video src="/videos/aiera1.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/pb6.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/whatsapp-video.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/rifet-streaming.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/aiera1.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/pb6.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/whatsapp-video.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/rifet-streaming.mp4" muted playsInline preload="metadata" />
+              <video src="/videos/aiera1.mp4" muted playsInline preload="metadata" />
             </div>
           </div>
-          <h2 className="category-title">SHORT VIDEOS</h2>
+          <h2 className="category-title">VIDEO EDITING</h2>
         </Link>
 
         <Link to="/others" className="category-card card-dark">
@@ -81,15 +81,15 @@ const Portfolio = () => {
           </div>
           <div className="card-bg-poster">
             <div className="thumbnail-collage-grid">
-              <img src="/images/logos.png" alt="" />
-              <img src="/images/visiting-cards.png" alt="" />
-              <img src="/images/flyers.png" alt="" />
-              <img src="/images/logos.png" alt="" />
-              <img src="/images/visiting-cards.png" alt="" />
-              <img src="/images/flyers.png" alt="" />
-              <img src="/images/logos.png" alt="" />
-              <img src="/images/visiting-cards.png" alt="" />
-              <img src="/images/flyers.png" alt="" />
+              <img src="/images/logo-2.png" alt="" />
+              <img src="/images/logo-3.png" alt="" />
+              <img src="/images/logo-4.png" alt="" />
+              <img src="/images/logo-5.png" alt="" />
+              <img src="/images/vc-1.png" alt="" />
+              <img src="/images/vc-2.png" alt="" />
+              <img src="/images/logo-2.png" alt="" />
+              <img src="/images/vc-3.png" alt="" />
+              <img src="/images/logo-3.png" alt="" />
             </div>
           </div>
           <h2 className="category-title">OTHERS</h2>

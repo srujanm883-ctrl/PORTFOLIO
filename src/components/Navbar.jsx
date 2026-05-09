@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <span className="navbar-logo">
-          PORTFOLIO
-        </span>
+        <Link to="/" className="navbar-logo-link">
+          <img src="/images/logo-se.png" alt="Srujan Editzz" className="navbar-logo-img" />
+        </Link>
 
         <button 
           className="mobile-toggle" 

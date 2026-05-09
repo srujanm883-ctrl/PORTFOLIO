@@ -13,9 +13,14 @@ const Others = () => {
           <div className="heading-line"></div>
         </h2>
         <div className="others-grid logos-grid">
-          {[1, 2, 3, 4].map(i => (
-            <div key={`logo-${i}`} className="others-card">
-              <img src="/images/logos.png" alt={`Logo design ${i}`} />
+          {[
+            { id: 2, src: '/images/logo-2.png', alt: 'Delicious Kitchen Logo' },
+            { id: 3, src: '/images/logo-3.png', alt: 'MAN Logo' },
+            { id: 4, src: '/images/logo-4.png', alt: 'CNJ Home Buyers Logo' },
+            { id: 5, src: '/images/logo-5.png', alt: 'Abdul Raheem Star Logo' },
+          ].map(logo => (
+            <div key={`logo-${logo.id}`} className="others-card">
+              <img src={logo.src} alt={logo.alt} />
             </div>
           ))}
         </div>
@@ -27,27 +32,20 @@ const Others = () => {
           <div className="heading-line"></div>
         </h2>
         <div className="others-grid cards-grid">
-          {[1, 2, 3, 4].map(i => (
-            <div key={`card-${i}`} className="others-card card-landscape">
-              <img src="/images/visiting-cards.png" alt={`Visiting card ${i}`} />
+          {[
+            { id: 1, src: '/images/vc-1.png', alt: 'DanceStudio Card' },
+            { id: 2, src: '/images/vc-2.png', alt: 'Manager Card' },
+            { id: 3, src: '/images/vc-3.png', alt: 'Corporate Card' },
+            { id: 4, src: '/images/vc-4.png', alt: 'Catering Card' },
+          ].map(card => (
+            <div key={`card-${card.id}`} className="others-card card-landscape">
+              <img src={card.src} alt={card.alt} />
             </div>
           ))}
         </div>
       </section>
 
-      <section className="others-category">
-        <h2 className="category-heading">
-          <span className="text-purple">FLYERS</span>
-          <div className="heading-line purple-line"></div>
-        </h2>
-        <div className="others-grid flyers-grid">
-          {[1, 2, 3, 4, 5].map(i => (
-            <div key={`flyer-${i}`} className="others-card card-flyer">
-              <img src="/images/flyers.png" alt={`Flyer design ${i}`} />
-            </div>
-          ))}
-        </div>
-      </section>
+
     </div>
   );
 };
